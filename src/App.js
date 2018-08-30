@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import images from './images.json';
-import ImgComp from './image.js';
+import Image from './image.js';
 
 class App extends Component {
 
@@ -20,7 +20,7 @@ class App extends Component {
       <div>
         {images.map(img => {
           return (
-              <ImgComp src={img.src} click = {this.handleImageClick}/>
+              <Image src={img.src} click = {this.handleImageClick}/>
           )
         })}
       </div>
